@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    gap: 10px;
+    /* flex-direction: column; */
+}
+
+body{
+    display: flex;
+    min-height: 100dvh;
+    min-width: 100dvw;
+    justify-content: center;
+    align-items: center; 
+}
+
+.container div{
+    min-width: 100px;
+    min-height: 100px;
+    background: rebeccapurple;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 20px;
+}
+/* 
+.inner{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+} */
+
+.inner{
+    border: none !important;
+    background-color: transparent !important;
+    margin: 0;
+    padding: 0;
+}
+
+.inner div{
+   margin: 10px 0;
+    background-color: orange;
+}
