@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Ticket Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/images/logo-mark.svg" type="image/x-icon">
+</head>
+<body>
+    
+
+    <div class="container">
+        <img src="./assets/images/logo-full.svg" alt="logo" class="logo">
+        <h1 id="heading">Your journey to coding conf 2025 starts here!</h1>
+        <p class="tagline" id="tagline">Secure your spot at next year's biggest coding conference.</p>
+
+        <form id="main">
+            <div class="form-group">
+                <label for="avatar">Upload Avatar</label>
+                <div class="upload-box" id="upload-box" tabindex="0">
+                    <input type="file" name="avatar" id="avatar" accept="image/*">
+                    <div class="upload-icon">
+                        <img src="./assets/images/icon-upload.svg" alt="" id="avatar-image">
+                    </div>
+                    <p>Drag and drop or click to upload</p>
+                    <div id="upload-buttons">
+                        <button id="remove-avatar">Remove Image</button>
+                        <button id="change-avatar">Change Image</button>
+                    </div>
+                </div>
+                <div class="info">
+                    <img src="./assets/images/icon-info.svg" alt="">
+                    <p>Upload your photo (JPG or PNG, max size: 500KB)</p>
+                </div>
+                <div class="error" id="avatar-error">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path stroke="#e16151" stroke-linecap="round" stroke-linejoin="round" d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z"/><path fill="#e16151" d="M8.004 10.462V7.596ZM8 5.57v-.042Z"/><path stroke="#e16151" stroke-linecap="round" stroke-linejoin="round" d="M8.004 10.462V7.596M8 5.569v-.042"/></svg>
+                    <span id="avatar-error-text">Avatar file is too large</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="username">Full Name</label>
+                <input type="text" name="username" id="username">
+                <div class="error" id="username-error">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path stroke="#e16151" stroke-linecap="round" stroke-linejoin="round" d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z"/><path fill="#e16151" d="M8.004 10.462V7.596ZM8 5.57v-.042Z"/><path stroke="#e16151" stroke-linecap="round" stroke-linejoin="round" d="M8.004 10.462V7.596M8 5.569v-.042"/></svg>
+                    <span id="username-error-text">Email address is not correctly formatted</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="useremail">Email Address</label>
+                <input type="email" name="useremail" id="useremail">
+                <div class="error" id="useremail-error">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path stroke="#e16151" stroke-linecap="round" stroke-linejoin="round" d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z"/><path fill="#e16151" d="M8.004 10.462V7.596ZM8 5.57v-.042Z"/><path stroke="#e16151" stroke-linecap="round" stroke-linejoin="round" d="M8.004 10.462V7.596M8 5.569v-.042"/></svg>
+                    <span id="useremail-error-text">Email address is not correctly formatted</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="gusername">Github Username</label>
+                <input type="text" name="gusername" id="gusername">
+                <div class="error" id="gusername-error">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path stroke="#e16151" stroke-linecap="round" stroke-linejoin="round" d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z"/><path fill="#e16151" d="M8.004 10.462V7.596ZM8 5.57v-.042Z"/><path stroke="#e16151" stroke-linecap="round" stroke-linejoin="round" d="M8.004 10.462V7.596M8 5.569v-.042"/></svg>
+                    <span id="gusername-error-text">Github Username is required!</span>
+                </div>
+
+            </div>
+            <button type="submit"> 
+                Generate my tickert
+            </button>
+        </form>
+
+        <div id="ticket">
+            <img src="./assets/images/pattern-ticket.svg" alt="Ticket BG" class="ticekt-bg"> 
+            <div class="ticket-left">
+                <div>
+                    <img src="./assets/images/logo-full.svg" alt="logo" class="logo">
+                    <p class="taglin">25th Sep / Kolkata, India</p>
+                </div>
+    
+                <div class="bottom">
+                    <img src="./assets/images/image-avatar.jpg" alt="avatar image" id="ticket-image">
+                    <div>
+                        <h3 id="ticket-name">John Doe</h3>
+                        <a href="https://www.github.com/ayushmanbt" id="github" target="_blank">
+                            <img src="./assets/images/icon-github.svg" alt="">
+                            <span id="github-name">@ayushmanbt</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <h3 id="ticket-id">
+                #123466
+            </h3>
+        </div>
+    </div>
+
+    <div class="pattern pattern-bottom-squiggly">
+
+    </div>
+
+    <img class="pattern pattern-circle" src="./assets/images/pattern-circle.svg" alt="">
+    <img src="./assets/images/pattern-lines.svg" alt="" class="pattern pattern-line">
+    <img src="./assets/images/pattern-squiggly-line-top.svg" alt="" class="pattern pattern-top-squiggly">
+
+    <script src="imageUpload.js"></script>
+    <script src="formValidation.js"></script>
+</body>
+</html>
