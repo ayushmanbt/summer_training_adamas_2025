@@ -10,5 +10,7 @@ Currently uploaded notes -
 
 |date | class | Note Status |
 |---|---|---|
-|12/06/2025|BCA-Full Stack - Session 1|✅|
+|12/06/2025|BCA-Full Stack - Session 1|✅
 |13/06/2025|B.Tech & MCA Full Stack - Session 1|✅
+|16/06/2025|BCA-Full Stack - Session 2|✅
+|18/06/2025|B.Tech & MCA Full Stack - Session 2|❌
