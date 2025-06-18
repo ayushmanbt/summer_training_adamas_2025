@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Shortener</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="flex min-h-[100vh] min-w-[100vw] justify-center items-center flex-column bg-green-100">
+    <form action="/shorten" method="post" class="shadow-md bg-white p-4 w-lg">
+        <h1 class="mb-2 font-bold text-center text-xl">Link Shortening Application</h1>
+        <label for="url" class="block">URL</label>
+        <input required type="url" name="url" id="url" class="block w-full p-1 border-2 my-2">
+        <button type="submit" class="px-2 py-1 bg-red-300 hover:bg-red-400 w-full cursor-pointer">Shorten the URL</button>
+    </form>
+</body>
+</html>
